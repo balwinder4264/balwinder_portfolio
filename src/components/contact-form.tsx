@@ -68,12 +68,6 @@ export function ContactForm({ emailTo }: { emailTo: string }) {
       >
         Send message <ArrowRight className="h-4 w-4" />
       </button>
-
-      <p className="text-xs leading-5 text-zinc-600 dark:text-zinc-400">
-        {disabled
-          ? "Add your email in src/data/portfolio.ts to enable this form (mailto fallback)."
-          : "This form uses a mailto fallback. Want a real form handler? I can add a Route Handler or integrate Resend."}
-      </p>
     </form>
   );
 }
